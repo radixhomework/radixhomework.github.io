@@ -1,3 +1,7 @@
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
+theme: minima
 title: RadixHomeWork
 description: Made with <3<
+
+sass:
+  style: compressed
