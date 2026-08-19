@@ -1,7 +1,31 @@
-theme: jekyll-theme-cayman
-#theme: minima
-title: RadixHomeWork
-description: Made with <3<
+title: "RadixHomeWork"
+description: "Personal projects, made from home"
+url: ""
+baseurl: ""
+
+author:
+  name: "RadixHomeWork"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+markdown: kramdown
+permalink: pretty
 
 sass:
   style: compressed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

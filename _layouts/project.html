@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} — {{ site.title }}</title>
+
+  <meta name="description" content="{{ page.short_description | default: site.description }}">
+
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-brand" href="{{ "/" | relative_url }}">
+        <span class="site-title">RadixHomeWork</span>
+        <span class="site-tagline">Personal projects, made from home</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ "/" | relative_url }}">Home</a>
+        <a href="{{ "/about/" | relative_url }}">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="wrapper">
+      <article class="project">
+
+        <a class="back-link" href="{{ "/" | relative_url }}">← All projects</a>
+
+        <header class="project-header">
+          {% if page.status %}
+            <p class="project-type">{{ page.status }}</p>
+          {% endif %}
+
+          <h1>{{ page.title }}</h1>
+
+          {% if page.short_description %}
+            <p class="project-lead">{{ page.short_description }}</p>
+          {% endif %}
+        </header>
+
+        {% if page.image %}
+          <figure class="project-cover">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
+          </figure>
+        {% endif %}
+
+        <div class="project-content">
+          {{ content }}
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-title">RadixHomeWork</div>
+      <div>Personal projects, made from home.</div>
+    </div>
+  </footer>
+</body>
+</html>
