@@ -4,14 +4,6 @@ title: "Radixhomework"
 ---
 
 <div class="hero">
-  <div class="radix-mark" aria-hidden="true">
-    <span>R</span>
-  </div>
-
-  <p class="eyebrow">Personal projects, made from home</p>
-
-  <h1>RadixHomeWork</h1>
-
   <p class="hero-intro">
     A small personal workshop for worlds, games, tools, illustrations
     and whatever else happens to take root.
