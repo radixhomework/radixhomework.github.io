@@ -5,19 +5,20 @@
 
 :root {
   --rh-root-black: #1E211C;
-  --rh-parchment: #FDFAF3;
+  --rh-ivory: #FDFAF3;
   --rh-moss-green: #4D5947;
   --rh-earth-brown: #76604E;
   --rh-patinated-copper: #9A7656;
-  --rh-faded-rose: #8A5E61;
+  --rh-faded-pink: #8A5E61;
+  --rh-parchment: #D8D0BD;
 
-  --background: var(--rh-parchment);
-  --surface: #E2DCCB;
+  --background: var(--rh-ivory);
+  --surface: var(--rh-parchment);
   --text: var(--rh-root-black);
   --muted: var(--rh-earth-brown);
   --primary: var(--rh-moss-green);
   --accent: var(--rh-patinated-copper);
-  --radish: var(--rh-faded-rose);
+  --radish: var(--rh-faded-pink);
   --border: rgba(30, 33, 28, 0.20);
 
   --display: "Cormorant Garamond", Georgia, serif;
@@ -218,7 +219,7 @@ p {
 
 .project-card {
   padding: 2rem;
-  background: rgba(226, 220, 203, .5);
+  background: rgba(216, 208, 189, .5);
   border: 1px solid var(--border);
   transition: transform .2s ease, border-color .2s ease;
 }
