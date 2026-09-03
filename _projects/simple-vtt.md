@@ -3,7 +3,7 @@ title: "Simple VTT"
 order: 2
 status: "Worldbuilding / TTRPG"
 short_description: "A lightweight, self-hosted virtual tabletop for pen-and-paper RPGs."
-image: "/assets/images/simple-vtt-wordmark.png"
+image: "/assets/images/simple-vtt-logo.png"
 image_alt: "Simple VTT project cover"
 ---
 
