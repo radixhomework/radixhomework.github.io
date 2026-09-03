@@ -307,6 +307,17 @@ p {
   color: var(--radish);
 }
 
+.footer-github {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--text);
+  transition: color .2s ease;
+}
+
+.footer-github:hover {
+  color: var(--primary);
+}
+
 /* Responsive */
 
 @media (max-width: 700px) {
